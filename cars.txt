@@ -1,0 +1,30 @@
+CARS
+__________________________
+
+id                            - UNSIGNED INT - PRIMARY_KEY (NOT NULL, UNIQUE) - AUTO_INCREMENT
+vin                           - VARCHAR(17) // Vehicle Identification Number - NOT NULL - UNIQUE
+brand                         - VARCHAR(255) - NOT NULL
+model                         - VARCHAR(255) - NOT NULL
+year                          - YEAR - NOT NULL
+mileage                       - UNSIGNED INT - NOT NULL
+fuel_type                     - VARCHAR(50) - NOT NULL
+transmission                  - VARCHAR(50) 
+body_type                     - VARCHAR(50) 
+color                         - VARCHAR(50)
+engine_size                   - DECIMAL(3,1) // es. 2.0 - NOT NULL
+horsepower                    - UNSIGNED SMALLINT
+torque                        - UNSIGNED SMALLINT
+doors                         - UNSIGNED TINYINT 
+seats                         - UNSIGNED TINYINT - NOT NULL
+price                         - DECIMAL(10,2) //99999999.99 - NOT NULL
+discount_price                - DECIMAL(10,2) //99999999.99
+description                   - MEDIUMTEXT
+features                      - TEXT // elenco delle caratteristiche opzionali
+warranty                      - TINYINT // 1: Sì, 0: No
+dealer_contact                - VARCHAR(255) // informazioni di contatto del concessionario
+image_path                    - TEXT DEFAULT ("img/car-placeholder.jpg")
+available                     - TINYINT - NOT NULL // 1: Disponibile, 0: Non disponibile
+date_added                    - DATETIME - NOT NULL
+status                        - VARCHAR(50) - NOT NULL // Stato dell'auto (es. Disponibile, Venduta)
+
+
